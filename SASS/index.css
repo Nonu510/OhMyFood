@@ -1,5 +1,4 @@
 body {
-  max-width: 1440px;
   margin: auto;
   box-sizing: border-box;
   width: 100%;
@@ -220,6 +219,21 @@ li span {
   color: transparent;
 }
 
+.card .fa-heart {
+  font-weight: 400;
+  font-size: 21px;
+  color: black;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+.card:hover .fa-heart {
+  color: transparent;
+  background: linear-gradient(rgb(147, 86, 220), rgb(255, 121, 218));
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: 900;
+}
+
 /* Footer *********************************************/
 h4 {
   font-size: 18px;
@@ -270,6 +284,9 @@ footer .fa-solid {
   }
 }
 @media (min-width: 1024px) {
+  .Fonction {
+    padding: 60px 180px;
+  }
   .restaurant {
     display: flex;
     flex-direction: column;
@@ -284,12 +301,12 @@ footer .fa-solid {
   .CARD a {
     width: calc(50% - 60px);
     flex-grow: 1;
-    max-width: 490px;
   }
   footer {
     flex-direction: row-reverse;
     height: 114px;
     align-items: end;
+    gap: 100px;
   }
   ul {
     display: flex;

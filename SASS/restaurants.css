@@ -1,5 +1,4 @@
 body {
-  max-width: 1440px;
   margin: auto;
   box-sizing: border-box;
   width: 100%;
@@ -74,8 +73,11 @@ h2 {
   font-size: 22px;
 }
 
-.titre {
-  border-bottom: 3px solid rgb(153, 226, 208);
+.barre {
+  width: 40px;
+  height: 3px;
+  background-color: rgb(153, 226, 208);
+  margin-bottom: 12px;
 }
 
 main {
@@ -87,7 +89,7 @@ main {
   margin-top: -40px;
 }
 
-section {
+.CARD {
   margin-bottom: 40px;
   display: flex;
   flex-direction: column;
@@ -104,9 +106,15 @@ section {
   border-radius: 15px;
   padding: 15px;
   box-sizing: border-box;
+  flex-grow: 1;
 }
 
-h3 {
+.titre {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.card-title {
   font-size: 18px;
 }
 
@@ -118,6 +126,31 @@ p {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  overflow: hidden;
+}
+
+.valid {
+  display: flex;
+  height: 72px;
+}
+
+.choix {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0px;
+  height: 100%;
+  background: rgb(153, 226, 208);
+  border-radius: 0px 15px 15px 0px;
+}
+.choix:hover {
+  width: 59px;
+}
+
+.fa-circle-check:before {
+  color: white;
+  font-size: 20px;
+  overflow: hidden;
 }
 
 .bouton {
@@ -176,7 +209,6 @@ p {
   animation-delay: 2000ms;
 }
 
-/* Animation de base */
 @keyframes fadeInUp {
   to {
     opacity: 1;
@@ -240,6 +272,7 @@ footer .fa-solid {
     flex-direction: row-reverse;
     height: 114px;
     align-items: end;
+    gap: 100px;
   }
   ul {
     display: flex;
