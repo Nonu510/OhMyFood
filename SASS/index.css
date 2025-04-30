@@ -211,6 +211,8 @@ li span {
   font-size: 21px;
   color: black;
   background-color: white;
+  background-clip: text;
+  -webkit-background-clip: text;
   transition: all 0.3s ease;
 }
 .fa-heart:hover {
