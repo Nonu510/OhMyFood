@@ -59,6 +59,21 @@ h1 {
 }
 
 /* main ************************************************/
+.fa-heart {
+  font-weight: 400;
+  font-size: 21px;
+  color: black;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+.fa-heart:hover {
+  color: transparent;
+  background: linear-gradient(rgb(147, 86, 220), rgb(255, 121, 218));
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: 900;
+}
+
 h2 {
   font-size: 28px;
 }

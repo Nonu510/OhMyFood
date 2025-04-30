@@ -207,26 +207,13 @@ li span {
 }
 
 .fa-heart {
-  font-size: 21px;
-}
-
-.card-content .fa-solid {
-  background: linear-gradient(rgb(147, 86, 220), rgb(255, 121, 218));
-  background-size: cover;
-  background-position: center;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.card .fa-heart {
   font-weight: 400;
   font-size: 21px;
   color: black;
   background-color: white;
   transition: all 0.3s ease;
 }
-.card:hover .fa-heart {
+.fa-heart:hover {
   color: transparent;
   background: linear-gradient(rgb(147, 86, 220), rgb(255, 121, 218));
   background-clip: text;
