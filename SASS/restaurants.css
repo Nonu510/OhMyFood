@@ -66,7 +66,6 @@ h1 {
   background-color: white;
   background-clip: text;
   -webkit-background-clip: text;
-  transition: all 0.3s ease;
 }
 .fa-heart:hover {
   color: transparent;
@@ -146,11 +145,6 @@ p {
   overflow: hidden;
 }
 
-.valid {
-  display: flex;
-  height: 72px;
-}
-
 .choix {
   display: flex;
   align-items: center;
@@ -159,6 +153,8 @@ p {
   height: 100%;
   background: rgb(153, 226, 208);
   border-radius: 0px 15px 15px 0px;
+  transition: all 2s ease;
+  padding: 15px;
 }
 .choix:hover {
   width: 59px;
@@ -167,7 +163,6 @@ p {
 .fa-circle-check:before {
   color: white;
   font-size: 20px;
-  overflow: hidden;
 }
 
 .bouton {
@@ -188,6 +183,11 @@ p {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   border-radius: 50px;
+}
+#Commander:hover {
+  filter: brightness(1.2);
+  box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.3764705882);
+  transition: all 0.3s ease;
 }
 
 .card {
