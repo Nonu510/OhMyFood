@@ -63,9 +63,10 @@ h1 {
   font-weight: 400;
   font-size: 21px;
   color: black;
-  background-color: white;
+  background: linear-gradient(rgb(147, 86, 220), rgb(255, 121, 218));
   background-clip: text;
   -webkit-background-clip: text;
+  transition: color 1s cubic-bezier(0, 1.3, 0.99, 0.73);
 }
 .fa-heart:hover {
   color: transparent;
@@ -142,7 +143,21 @@ p {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  overflow: hidden;
+}
+
+.valid {
+  display: flex;
+  height: 100%;
+  transition: all 2s ease;
+}
+.valid:hover .choix {
+  width: 59px;
+}
+.valid:hover .card {
+  border-radius: 15px 0px 0px 15px;
+}
+.valid:hover .card-title {
+  overflow: clip;
 }
 
 .choix {
@@ -150,14 +165,10 @@ p {
   align-items: center;
   justify-content: center;
   width: 0px;
-  height: 100%;
+  overflow: hidden;
   background: rgb(153, 226, 208);
   border-radius: 0px 15px 15px 0px;
   transition: all 2s ease;
-  padding: 15px;
-}
-.choix:hover {
-  width: 59px;
 }
 
 .fa-circle-check:before {
