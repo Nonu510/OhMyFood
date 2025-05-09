@@ -122,7 +122,8 @@ main {
     border-radius: 15px;
     padding: 15px;
     box-sizing: border-box;
-    flex-grow: 1;
+    flex: 1;
+    min-width: 0;
 }
 
 .titre {
@@ -142,12 +143,13 @@ p {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    flex: 1;
+    min-width: 0;
 }
 
 .valid {
     display: flex;
     height: 100%; 
-    transition: all 2s ease;
     &:hover  {
         .choix {
             width: 59px;
@@ -155,11 +157,16 @@ p {
         .card {
             border-radius: 15px 0px 0px 15px;
         }
-        .card-title {
-            overflow: clip;
-        }
     }
-}    
+}   
+
+.card-title, .card-subtitle {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    max-width: 100%;
+  }
 
 .choix {
     display: flex;
