@@ -33,6 +33,7 @@ header {
 
 .fa-arrow-left {
     font-size: 16px;
+    color: rgba(53, 53, 53, 1);
 }
 
 header a {
@@ -94,6 +95,7 @@ h2 {
    height: 3px;
    background-color: rgba(153, 226, 208, 1);
    margin-bottom: 12px;
+   margin-top: 5px;
 }
 
 main {
@@ -176,7 +178,7 @@ p {
     overflow: hidden;
     background: rgba(153, 226, 208, 1);
     border-radius: 0px 15px 15px 0px;
-    transition: all 2s ease;
+    transition: all 1s ease;
 }
 
 .fa-circle-check:before {
